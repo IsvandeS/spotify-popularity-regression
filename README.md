@@ -55,7 +55,7 @@ Both scripts resolve paths relative to their own location, so they work from any
 
 ## Interpretation
 
-- **Low R² (≈ 0.06):** audio features alone explain very little of the variance in popularity. Genre, artist, marketing, and release timing — none of which are in this model — dominate.
+- **Low R² (≈ 0.06):** audio features alone explain very little of the variance in popularity. Other factors such as genre, artist, marketing, and release timing are not explained by this dataset.
 - **Energy vs. loudness:** these correlate at 0.68, and their fitted coefficients (−4.25 and +3.50) are large and opposite in sign. This is a multicollinearity artifact; neither variable correlates strongly with popularity on its own (−0.10 and +0.04 respectively).
 - **Predicted-vs-actual plot:** predictions compress into a narrow band around the mean (~20–55), while actuals span the full 0–100 range. This is the visual signature of a weak linear fit on a noisy target.
 
